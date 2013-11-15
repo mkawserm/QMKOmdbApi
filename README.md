@@ -1,7 +1,7 @@
 QMKOmdbApi
 ==========
 
-QMKOmdbApi is the Qt5 implementation of Open Movie Database Api (http://www.omdbapi.com/)
+QMKOmdbApi is the C++(Qt5) implementation of Open Movie Database Api (http://www.omdbapi.com/)
 
 
 
