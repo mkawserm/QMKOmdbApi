@@ -32,6 +32,7 @@ private:
 
 
     QString api_url;
+    QUrl request_url;
     /*OmdbApi defined variable*/
     QString s;/*Search String (optional)*/
     QString i;/*IMDb id (optional)*/
@@ -100,6 +101,7 @@ public:
     QString get_omdbapi_version(void);
 
     QString get_movie_info(void);
+    QUrl get_request_url(void);
 
 
 
