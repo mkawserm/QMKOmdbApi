@@ -5,16 +5,7 @@ QMKOmdbApi is the Qt5 implementation of Open Movie Database Api (http://www.omdb
 
 
 
-Example Usage:
-
-
-#include "qmkomdbapi.h"
-#include <QApplication>
-#include <QDebug>
-
-int main(int argc, char *argv[])
-{
-    QApplication a(argc, argv);
+Example Usage 1:
 
     QMKOmdbApi *oa = new QMKOmdbApi();
     oa->set_t("Brave Heart");
@@ -29,5 +20,4 @@ int main(int argc, char *argv[])
         qDebug() << ex.get_error();
     }
     
-    return a.exec();
-}
+
