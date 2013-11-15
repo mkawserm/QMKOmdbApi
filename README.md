@@ -14,7 +14,7 @@ Example Usage 1:
     oa->set_r("JSON");          //set return type
 
     try{
-        qDebug() << oa->get_movie_info();
+        qDebug() << oa->get_movie_info();   //Get Movie Information in JSON formatted QString
     }
     catch(QMKOmdbApiException ex){
         qDebug() << ex.get_error();
@@ -28,7 +28,7 @@ Example Usage 2:
     oa->set_r("XML");          //set return type
 
     try{
-        qDebug() << oa->get_movie_info();
+        qDebug() << oa->get_movie_info();   //Get Movie Information in XML formatted QString
     }
     catch(QMKOmdbApiException ex){
         qDebug() << ex.get_error();
@@ -45,7 +45,7 @@ Example Usage 3:
     oa->set_r("JSON");          //set return type
 
     try{
-        qDebug() << oa->get_movie_info();
+        qDebug() << oa->get_movie_info();   //Get Movie Information in JSON formatted QString
     }
     catch(QMKOmdbApiException ex){
         qDebug() << ex.get_error();
