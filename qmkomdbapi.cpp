@@ -1,6 +1,13 @@
 #include "qmkomdbapi.h"
 
 
+
+
+
+
+
+
+
 /************QMKOmdbApiException************/
 
 QMKOmdbApiException::QMKOmdbApiException(int aecode, const QString aerror){
@@ -37,7 +44,7 @@ QMKOmdbApi::QMKOmdbApi()
 }
 
 void QMKOmdbApi::set_default(){
-    this->version = "1.0.0";/*QMKOmdbApi Version*/
+    this->version = "1.0.1";/*QMKOmdbApi Version*/
     this->omdbapi_version = "2.1";
     this->api_url = "http://www.omdbapi.com";
     this->ua = "QMKOmdbApi/"+this->version+"(+https://github.com/mkawserm/QMKOmdbApi)";
@@ -181,7 +188,13 @@ QUrl QMKOmdbApi::validate_input(void){
 
 
     request_url.setQuery(request_arg);
+    this->request_url = request_url;
     return request_url;
+}
+
+
+QUrl QMKOmdbApi::get_request_url(void){
+    return this->request_url;
 }
 
 
@@ -197,4 +210,9 @@ QString QMKOmdbApi::get_movie_info(void){
 
 
 /************End QMKOmdbApi************/
+
+
+
+
+
 
