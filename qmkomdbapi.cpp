@@ -1,13 +1,6 @@
 #include "qmkomdbapi.h"
 
 
-
-
-
-
-
-
-
 /************QMKOmdbApiException************/
 
 QMKOmdbApiException::QMKOmdbApiException(int aecode, const QString aerror){
